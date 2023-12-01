@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #d1e8e2;
+  background-image: url("./images/1674272561_catherineasquithgallery-com-p-glubokii-temno-serii-fon-foto-61.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+.header {
+  height: 70px;
+  margin: auto;
+  background-color: #485b52;
+  color: #fdd8b5;
+}
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 85vw;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+}
+.header-nav__item {
+  margin: 0 2vw;
+}
+.title-in-section {
+  padding-top: 70px;
+  color: #fdd8b5;
+}
+.text-in-section {
+  line-height: 40px;
+}
+.skill {
+  padding: 10px 0 10px 0;
+}
+.projects-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-container {
+  flex: 0 0 auto;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project {
+  width: 100%;
+}
+.img-in-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pagination {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #d1e8e2;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fdd8b5;
+}
+.slider-buttons {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+}
+.my-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 20px;
+}
