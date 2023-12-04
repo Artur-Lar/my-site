@@ -16,6 +16,13 @@ body {
   margin: auto;
   background-color: #485b52;
   color: #fdd8b5;
+  position: relative;
+  transition: top 0.3s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .header-nav {
   list-style-type: none;
@@ -29,6 +36,11 @@ body {
 }
 .header-nav__item {
   margin: 0 2vw;
+}
+.link-in-nav {
+  text-decoration: none;
+  color: #fdd8b5;
+  cursor: pointer;
 }
 .title-in-section {
   padding-top: 70px;
@@ -90,4 +102,28 @@ body {
   border-radius: 5px;
   background-color: white;
   padding: 10px 20px;
+}
+.link {
+  text-decoration: none;
+  color: #d1e8e2;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.footer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .pagination {
+    display: none;
+  }
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }

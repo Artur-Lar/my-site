@@ -14,14 +14,14 @@
   <body>
     <header class="header">
       <ul class="header-nav">
-        <li class="header-nav__item">Обо мне</li>
-        <li class="header-nav__item">Навыки</li>
-        <li class="header-nav__item">Мои проекты</li>
-        <li class="header-nav__item">Контакты</li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#about-me">Обо мне</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#skills">Навыки</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#projects">Мои проекты</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#contact">Контакты</a></li>
       </ul>
     </header>
     <main class="container">
-      <section>
+      <section id="about-me">
         <h2 class="title-in-section">Обо мне</h2>
         <p class="text-in-section">
           Привет! Меня зовут Артур, я фронтенд разработчик с опытом работы в
@@ -33,7 +33,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="skills">
         <h2 class="title-in-section">Навыки</h2>
         <div class="skill">HTML5</div>
         <div class="skill">CSS3 / SCSS</div>
@@ -47,7 +47,7 @@
 
       </section>
 
-      <section>
+      <section id="projects">
         <h2 class="title-in-section">Проекты</h2>
         <div class="projects-slider" id="projectsSlider">
           <div class="project-container">
@@ -71,7 +71,7 @@
                     <li>При прокрутке сайта шапка остается закреплённой в верхней части
                 экрана</li>
               </p>
-              <a href="ссылка на проект">Ссылка на проект</a>
+              <a href="https://github.com/Artur-Lar/Bookshop-fin.git" target="_blank" class="link">Ссылка на проект</a>
             </div>
           </div>
           <div class="project-container">
@@ -97,7 +97,7 @@
                     <li>Выпадающее меню пользователя</li>
                 </ul>
               </p>
-              <a href="ссылка на проект">Ссылка на проект</a>
+              <a href="https://github.com/Artur-Lar/kanban-board.git" target="_blank" class="link">Ссылка на проект</a>
             </div>
           </div>
           <div class="project-container">
@@ -118,7 +118,7 @@
                     <li>В отчете выводится информация о периоде и количестве публикаций в СМИ (есть возможность выбора только негативных публикаций)</li>
                 </ul>
               </p>
-              <a href="ссылка на проект">Ссылка на проект</a>
+              <a href="https://github.com/Artur-Lar/scan.git" target="_blank" class="link">Ссылка на проект</a>
             </div>
           </div>
           <div class="project-container">
@@ -134,7 +134,7 @@
                     <li>При добавлении данных о сотруднике форма проверяет правильность введенных данных (обязательны имя и фамилия, стаж не должен быть больше возраста сотрудника)</li>
                 </ul>
               </p>
-              <a href="ссылка на проект">Ссылка на проект</a>
+              <a target="_blank" href="https://github.com/Artur-Lar/tets-task-on-vue.git" class="link">Ссылка на проект</a>
             </div>
           </div>
           <div class="project-container">
@@ -152,7 +152,7 @@
                     <li>Проверка заполнения формы для регистрации и авторизации</li>
                 </ul>
               </p>
-              <a href="ссылка на проект">Ссылка</a>
+              <!-- <a href="ссылка на проект">Ссылка</a> -->
             </div>
           </div>
         </div>
@@ -171,14 +171,16 @@
       </section>
 
       <section id="contact">
-        <h2>Контакты</h2>
-        <p>Свяжитесь со мной:</p>
-
+        <h2 class="title-in-section">Контакты</h2>
+        <p>Свяжитесь со мной:
+          +79274083563 (WhatsApp)
+        </p>
+        <a class="link" href="https://t.me/arturdr45" target="_blank">Мой профиль в Телеграме</a>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+    <footer class="footer">
+      <p>&copy; 2023 Артур Ларионов</p>
     </footer>
 
     <script>
@@ -220,6 +222,12 @@
 
     // Показываем первый слайд при загрузке страницы
     showSlide(currentSlide);
+
+    // Добавление класса при прокрутке
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
 </script>
   </body>
 </html>
