@@ -1,0 +1,45 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.5); /* Увеличение размера при наведении */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 152, 219, 0.8); /* Прозрачный фон для текста */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container.active .overlay-text {
+  opacity: 1;
+}
