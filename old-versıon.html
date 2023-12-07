@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header-nav">
+        <li class="header-nav__item"><a class="link-in-nav" href="#about-me">Обо мне</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#skills">Навыки</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#projects">Мои проекты</a></li>
+        <li class="header-nav__item"><a class="link-in-nav" href="#contact">Контакты</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <section id="about-me">
+        <h2 class="title-in-section">Обо мне</h2>
+        <p class="text-in-section">
+          Привет! Меня зовут Артур, я фронтенд разработчик с опытом работы в
+          создании современных и отзывчивых веб-приложений. Стремлюсь создавать
+          веб-приложения, которые предоставляют отличный пользовательский опыт.
+          Умею переводить дизайнерские концепции в эффективный и красочный код.
+          Опыт работы с различными фреймворками, такими как React и Vue,
+          позволяет мне быстро адаптироваться к новым технологиям
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2 class="title-in-section">Навыки</h2>
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3 / SCSS</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Vue.js</div>
+        <div class="skill">Material UI</div>
+        <div class="skill">GIT Flow</div>
+        <div class="skill">Jira</div>
+
+      </section>
+
+      <section id="projects">
+        <h2 class="title-in-section">Проекты</h2>
+        <div class="projects-slider" id="projectsSlider">
+          <div class="project-container">
+            <div class="project">
+              <h3>Книжный магазин с подключением к API Google Books</h3>
+              <div class="img-in-section">
+                <img
+                src="images/book-shop.png"
+                alt=""
+              />
+              </div>
+              <p class="text-in-section">
+                <ul>
+                    <li>Главная страница сверстана по макету из <strong>Figma</strong></li>
+                    <li>Подключено <strong>Google Books API</strong> , чтобы данные
+                загружались с сервера</li>
+                    <li>Создан автоматический <strong>слайдер</strong></li>
+                    <li>Кнопки авторизации, поиска и корзины неактивны. Однако при
+                добавлении товара в корзину у иконки появляется бейджик с
+                количеством товара в корзине</li>
+                    <li>При прокрутке сайта шапка остается закреплённой в верхней части
+                экрана</li>
+              </p>
+              <a href="https://github.com/Artur-Lar/Bookshop-fin.git" target="_blank" class="link">Ссылка на проект</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project">
+              <h3>Канбан-доска</h3>
+              <div class="img-in-section">
+                <img src="images/kanban.png" alt="" />
+              </div>
+              <p class="text-in-section">
+                <ul>
+                    <li>Проект на <strong>React</strong></li>
+                    <li>Главная страница сверстана по макету из Figma.</li>
+                    <li>Канбан-доска имеет 4 блока с задачами:Backlog, Ready, In
+                progress, Finished</li>
+                    <li>Первоначально каждая задача всегда размещается в Backlog — для
+                анализа. При клике на кнопку «+ Add card» в карточке Backlog
+                появляется поле ввода в конце списка, между последней задачей и
+                кнопкой. При этом кнопка «+ Add card» меняется на «Submit»</li>
+                    <li>Осуществлено перемещение задач между списками</li>
+                    <li>Осуществлена возможность перехода на отдельную страницу
+                какой-либо задачи в списке при клике на её заголовок</li>
+                    <li>В футере выведено количество активных и завершенных задач</li>
+                    <li>Выпадающее меню пользователя</li>
+                </ul>
+              </p>
+              <a href="https://github.com/Artur-Lar/kanban-board.git" target="_blank" class="link">Ссылка на проект</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project">
+              <h3>Сервис СКАН</h3>
+                <div class="img-in-section">
+                   <img  src="images/FR_final_2_4.png" alt="" /> 
+                </div>
+              <p class="text-in-section">
+                <ul>
+                    <li>Проект на <strong>React</strong></li>
+                    <li>Главная страница сверстана по макету из Figma.</li>
+                    <li>Компания СКАН разработала новый API для поиска публикаций о компании (юридическом лице) в средствах массовой информации по его ИНН.</li>
+                    <li>Подключение к REST API через GET, POST запросы</li>
+                    <li>Авторизация пользователя по логину и паролю</li>
+                    <li>Форма для регистрации проходит валидацию</li>
+                    <li>Поиск информации осуществляется по ИНН компании</li>
+                    <li>В отчете выводится информация о периоде и количестве публикаций в СМИ (есть возможность выбора только негативных публикаций)</li>
+                </ul>
+              </p>
+              <a href="https://github.com/Artur-Lar/scan.git" target="_blank" class="link">Ссылка на проект</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project">
+              <h3>Редактируемый список сотрудников</h3>
+              <div class="img-in-section">
+                <img src="images/employers-list.png" alt="" />
+              </div>
+              <p class="text-in-section">
+                <ul>
+                    <li>Проект на <strong>Vue</strong></li>
+                    <li>Позволяет создавать, добавлять, редактировать список сотрудников</li>
+                    <li>При добавлении данных о сотруднике форма проверяет правильность введенных данных (обязательны имя и фамилия, стаж не должен быть больше возраста сотрудника)</li>
+                </ul>
+              </p>
+              <a target="_blank" href="https://github.com/Artur-Lar/tets-task-on-vue.git" class="link">Ссылка на проект</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project">
+              <h3>Коммерческая разработка - сервис по покупке и продаже криптовалюты SkyLine</h3>
+
+              <p class="text-in-section">
+                <ul>
+                    <li>Проект на <strong>React</strong></li>
+                    <li>Верстка по макету Figma с использованием Material UI</li>
+                    <li>Резиновая и адаптивная верстка</li>
+                    <li>Контролируемые формы</li>
+                    <li>Кастомизированные хуки</li>
+                    <li>Создание запросов GET, POST на сервер REST API</li>
+                    <li>Проверка заполнения формы для регистрации и авторизации</li>
+                </ul>
+              </p>
+              <!-- <a href="ссылка на проект">Ссылка</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button class="my-button" onclick="prevSlide()">Назад</button>
+          <div class="pagination">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+          <button class="my-button" onclick="nextSlide()">Вперед</button>
+        </div>
+        
+      </section>
+
+      <section id="contact">
+        <h2 class="title-in-section">Контакты</h2>
+        <p>Свяжитесь со мной:
+          +79274083563 (WhatsApp)
+        </p>
+        <a class="link" href="https://t.me/arturdr45" target="_blank">Мой профиль в Телеграме</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Артур Ларионов</p>
+    </footer>
+
+    <script>
+    // JavaScript код для слайдера с пагинацией
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.project-container');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+
+        // Обновляем активную точку
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        showSlide(currentSlide);
+    }
+
+    // Прикрепляем обработчики событий к точкам
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => goToSlide(i));
+    });
+
+    // Показываем первый слайд при загрузке страницы
+    showSlide(currentSlide);
+
+    // Добавление класса при прокрутке
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+</script>
+  </body>
+</html>
